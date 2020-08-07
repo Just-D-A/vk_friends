@@ -30,21 +30,17 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.3.1'
     implementation 'androidx.appcompat:appcompat:1.1.0'
-    //noinspection GradleCompatible
-    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:appcompat-v7:29.0.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
 
     //loader lib
     implementation 'com.github.rahatarmanahmed:circularprogressview:2.5.0'
 
-    //noinspection GradleCompatible
-    implementation 'com.android.support:recyclerview-v7:28.0.0'
-
     //moxy Android lib (MVP)
-    implementation 'com.arello-mobile:moxy:1.5.5'
-    implementation 'com.arello-mobile:moxy-android:1.5.5'
-    implementation 'com.arello-mobile:moxy-app-compat:1.5.5'
-    kapt 'com.arello-mobile:moxy-compiler:1.5.5'
+    implementation 'tech.schoolhelper:moxy-x:1.7.0'
+    implementation 'tech.schoolhelper:moxy-x-androidx:1.7.0'
+    kapt 'tech.schoolhelper:moxy-x-compiler:1.7.0'
 
     //dagger 2 lab
     api 'com.google.dagger:dagger-android:2.15'

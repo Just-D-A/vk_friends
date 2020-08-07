@@ -6,4 +6,8 @@ import com.arellomobile.mvp.viewstate.strategy.StateStrategyType
 
 @StateStrategyType(value = AddToEndSingleStrategy::class)
 interface LoginView: MvpView {
+    fun startLoading()
+    fun endLoading()
+    fun openFriends()
+    fun showError(text: String)
 }
