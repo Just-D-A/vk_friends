@@ -26,7 +26,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/main_text" />
+            android:text="@string/main_text"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/button"
@@ -38,7 +39,7 @@
             android:textColor="@android:color/white" />
 
         <com.github.rahatarmanahmed.cpv.CircularProgressView
-            android:id="@+id/progress_view"
+            android:id="@+id/cpv_login"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_gravity="center"

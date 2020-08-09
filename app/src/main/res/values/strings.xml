@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">vk_friends</string>
-    <string name="main_text">Вас приветствует приложение друзья Вконтакте</string>
+    <string name="main_text">Вас приветствует приложение друзья Вконтакте.</string>
     <string name="login_enter">ВОЙТИ</string>
 </resources>
