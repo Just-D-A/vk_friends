@@ -2,7 +2,10 @@ package com.example.vk_friends.activities
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import android.view.View
+import android.widget.EditText
 import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.OrientationHelper
@@ -33,6 +36,22 @@ class FriendsActivity : MvpAppCompatActivity(), FriendsView {
         mRvFriends = findViewById(R.id.recycler_friends)
         mTxtNoItems = findViewById(R.id.txt_friends_no_items)
         mCpvWait = findViewById(R.id.cpv_friends)
+
+        val mTxtSearch: EditText = findViewById(R.id.txt_friends_search)
+        mTxtSearch.addTextChangedListener(object: TextWatcher {
+            override fun afterTextChanged(s: Editable?) {
+
+            }
+
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+
+            }
+
+            override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
+                mAdapter.filter(query = s.toString())
+            }
+
+        })
 
         friendsPresenter.loadFriends()
         mAdapter = FriendsAdapter()

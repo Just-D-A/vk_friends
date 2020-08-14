@@ -11,17 +11,38 @@ import com.example.vk_friends.models.FriendModel
 import com.squareup.picasso.Picasso
 import de.hdodenhof.circleimageview.CircleImageView
 
+@Suppress("NAME_SHADOWING")
 class FriendsAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     var mFriendsList: ArrayList<FriendModel> = ArrayList()
+    var mSourceList: ArrayList<FriendModel> = ArrayList()
 
     fun setupFriends(friendsList: ArrayList<FriendModel>) {
+        mSourceList.clear()
+        mSourceList.addAll(friendsList)
+        filter(query = "")
+    }
+
+    fun filter(query: String) {
         mFriendsList.clear()
-        mFriendsList.addAll(friendsList)
+        mSourceList.forEach {
+            if ((it.getName().contains(query, ignoreCase = true)) || (it.getSurname()
+                    .contains(query, ignoreCase = true))
+            ) {
+                mFriendsList.add(it)
+            } else {
+                val city = it.getCity()
+                city?.let { city ->
+                    if (city.contains(query, ignoreCase = true)) {
+                        mFriendsList.add(it)
+                    }
+                }
+            }
+        }
         notifyDataSetChanged()
     }
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-        if(holder is FriendsViewHolder) {
+        if (holder is FriendsViewHolder) {
             holder.bind(friendModel = mFriendsList[position])
         }
     }
@@ -44,14 +65,14 @@ class FriendsAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
         @SuppressLint("SetTextI18n")
         fun bind(friendModel: FriendModel) {
-            friendModel.getAvatar()?.let {url ->
+            friendModel.getAvatar()?.let { url ->
                 Picasso.get().load(url)
                     .into(mCivAvatar)
             }
             mTxtName.text = "${friendModel.getName()} ${friendModel.getSurname()}"
             mTxtCity.text = itemView.context.getString(R.string.friend_no_city)
             friendModel.getCity()?.let { mTxtCity.text = "${friendModel.getCity()}" }
-            if(friendModel.getIsOnline()) {
+            if (friendModel.getIsOnline()) {
                 mImgIsOnline.visibility = View.VISIBLE
             } else {
                 mImgIsOnline.visibility = View.GONE

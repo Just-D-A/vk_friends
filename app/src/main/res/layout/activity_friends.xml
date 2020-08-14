@@ -13,6 +13,7 @@
         android:orientation="vertical">
 
         <EditText
+            android:id="@+id/txt_friends_search"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/friends_search_hint"
