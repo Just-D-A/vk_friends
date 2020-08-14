@@ -2,4 +2,8 @@
     <string name="app_name">vk_friends</string>
     <string name="main_text">Вас приветствует приложение друзья Вконтакте.</string>
     <string name="login_enter">ВОЙТИ</string>
+    <string name="friends_search_hint">Введите свой запрос</string>
+    <string name="friends_no_items">Список друзей пуст</string>
+    <string name="login_error_credentials">"Ошибка логинации "</string>
+    <string name="friend_no_city">Город не найден</string>
 </resources>

@@ -50,7 +50,7 @@ class LoginActivity : MvpAppCompatActivity(), LoginView {
         startActivity(Intent(applicationContext, FriendsActivity::class.java))
     }
 
-    override fun showError(text: String) {
-        Toast.makeText(applicationContext, text, Toast.LENGTH_SHORT).show()
+    override fun showError(textResource: Int) {
+        Toast.makeText(applicationContext, textResource, Toast.LENGTH_SHORT).show()
     }
 }

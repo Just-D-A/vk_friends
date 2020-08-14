@@ -7,11 +7,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e1495b6-abe8-4343-b2b1-c8461472b0f3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_exifinterface_exifinterface_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okhttp3_okhttp_3_10_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okio_okio_1_14_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_picasso_picasso_2_71828_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__de_hdodenhof_circleimageview_3_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/vk_friends/activities/FriendsActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/vk_friends/activities/FriendsActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/vk_friends/activities/LoginActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/vk_friends/activities/LoginActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/vk_friends/adapters/FriendsAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/vk_friends/adapters/FriendsAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/vk_friends/models/FriendModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/vk_friends/models/FriendModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/vk_friends/presenters/FriendsPresenter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/vk_friends/presenters/FriendsPresenter.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/vk_friends/presenters/LoginPresenter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/vk_friends/presenters/LoginPresenter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/vk_friends/providers/FriendsProvider.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/vk_friends/providers/FriendsProvider.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/vk_friends/views/FriendsView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/vk_friends/views/FriendsView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/vk_friends/views/LoginView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/vk_friends/views/LoginView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_friends.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_friends.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/cell_friend.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/cell_friend.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,6 +65,7 @@
         <option value="Interface" />
         <option value="Kotlin Class" />
         <option value="Class" />
+        <option value="valueResourceFile" />
       </list>
     </option>
   </component>
@@ -174,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596808827925</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add login presenter logic">
+      <created>1596984775215</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1596984775215</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -182,53 +211,74 @@
     <MESSAGE value="starting change main_activity" />
     <MESSAGE value="add libs and bone" />
     <MESSAGE value="change moxy for androidx" />
-    <option name="LAST_COMMIT_MESSAGE" value="change moxy for androidx" />
+    <MESSAGE value="add login presenter logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="add login presenter logic" />
   </component>
   <component name="WindowStateProjectService">
     <state x="480" y="290" width="950" height="533" key="#PSD" timestamp="1596806696870">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="480" y="290" width="950" height="533" key="#PSD/0.30.1920.1050@0.30.1920.1050" timestamp="1596806696870" />
-    <state x="676" y="202" width="558" height="708" key="#app" timestamp="1596802022569">
+    <state x="676" y="202" width="558" height="708" key="#app" timestamp="1597078715096">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state x="676" y="202" width="558" height="708" key="#app/0.30.1920.1050@0.30.1920.1050" timestamp="1596802022569" />
+    <state x="676" y="202" width="558" height="708" key="#app/0.30.1920.1050@0.30.1920.1050" timestamp="1597078715096" />
     <state x="674" y="360" width="562" height="392" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596807362271">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="674" y="360" width="562" height="392" key="#com.intellij.fileTypes.FileTypeChooser/0.30.1920.1050@0.30.1920.1050" timestamp="1596807362271" />
-    <state x="751" y="274" width="407" height="565" key="#com.intellij.ide.util.MemberChooser" timestamp="1596804608209">
+    <state x="751" y="274" width="407" height="565" key="#com.intellij.ide.util.MemberChooser" timestamp="1597346659418">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state x="751" y="274" width="407" height="565" key="#com.intellij.ide.util.MemberChooser/0.30.1920.1050@0.30.1920.1050" timestamp="1596804608209" />
+    <state x="751" y="274" width="407" height="565" key="#com.intellij.ide.util.MemberChooser/0.30.1920.1050@0.30.1920.1050" timestamp="1597346659418" />
     <state x="742" y="203" width="428" height="709" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1596624126652">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="742" y="203" width="428" height="709" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1596624126652" />
+    <state x="543" y="313" width="824" height="487" key="AndroidCreateResourceDirectoryDialog" timestamp="1597367405205">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="543" y="313" width="824" height="487" key="AndroidCreateResourceDirectoryDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1597367405205" />
     <state x="543" y="313" width="824" height="487" key="AndroidCreateResourceFileDialog" timestamp="1596624040453">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="543" y="313" width="824" height="487" key="AndroidCreateResourceFileDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1596624040453" />
-    <state x="819" y="388" width="282" height="337" key="AndroidCreateXmlResourceDialog" timestamp="1596571212459">
+    <state x="819" y="388" width="274" height="340" key="AndroidCreateXmlResourceDialog" timestamp="1597364675521">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state x="819" y="388" width="282" height="337" key="AndroidCreateXmlResourceDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1596571212459" />
-    <state x="529" y="145" width="852" height="823" key="CommitChangelistDialog2" timestamp="1596808824509">
+    <state x="819" y="388" width="274" height="340" key="AndroidCreateXmlResourceDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1597364675521" />
+    <state x="529" y="145" width="852" height="823" key="CommitChangelistDialog2" timestamp="1596984773486">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state x="529" y="145" width="852" height="823" key="CommitChangelistDialog2/0.30.1920.1050@0.30.1920.1050" timestamp="1596808824509" />
+    <state x="529" y="145" width="852" height="823" key="CommitChangelistDialog2/0.30.1920.1050@0.30.1920.1050" timestamp="1596984773486" />
     <state x="859" y="332" width="424" height="487" key="FileChooserDialogImpl" timestamp="1596804921343">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="859" y="332" width="424" height="487" key="FileChooserDialogImpl/0.30.1920.1050@0.30.1920.1050" timestamp="1596804921343" />
+    <state width="937" height="276" key="GridCell.Tab.0.bottom" timestamp="1597368521094">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state width="937" height="276" key="GridCell.Tab.0.bottom/0.30.1920.1050@0.30.1920.1050" timestamp="1597368521094" />
+    <state width="937" height="276" key="GridCell.Tab.0.center" timestamp="1597368521093">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state width="937" height="276" key="GridCell.Tab.0.center/0.30.1920.1050@0.30.1920.1050" timestamp="1597368521093" />
+    <state width="937" height="276" key="GridCell.Tab.0.left" timestamp="1597368521093">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state width="937" height="276" key="GridCell.Tab.0.left/0.30.1920.1050@0.30.1920.1050" timestamp="1597368521093" />
+    <state width="937" height="276" key="GridCell.Tab.0.right" timestamp="1597368521094">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state width="937" height="276" key="GridCell.Tab.0.right/0.30.1920.1050@0.30.1920.1050" timestamp="1597368521094" />
     <state x="584" y="190" width="992" height="733" key="SettingsEditor" timestamp="1596801639925">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="584" y="190" width="992" height="733" key="SettingsEditor/0.30.1920.1050@0.30.1920.1050" timestamp="1596801639925" />
-    <state x="555" y="291" width="800" height="531" key="Vcs.Push.Dialog.v2" timestamp="1596808834720">
+    <state x="555" y="291" width="800" height="531" key="Vcs.Push.Dialog.v2" timestamp="1596984779227">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state x="555" y="291" width="800" height="531" key="Vcs.Push.Dialog.v2/0.30.1920.1050@0.30.1920.1050" timestamp="1596808834720" />
+    <state x="555" y="291" width="800" height="531" key="Vcs.Push.Dialog.v2/0.30.1920.1050@0.30.1920.1050" timestamp="1596984779227" />
     <state x="102" y="149" width="1720" height="850" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1596808703433">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
@@ -237,9 +287,9 @@
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="100" y="130" width="1720" height="850" key="dock-window-1/0.30.1920.1050@0.30.1920.1050" timestamp="1596807137884" />
-    <state x="623" y="261" width="672" height="678" key="search.everywhere.popup" timestamp="1596983172716">
+    <state x="623" y="261" width="672" height="678" key="search.everywhere.popup" timestamp="1597346999330">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state x="623" y="261" width="672" height="678" key="search.everywhere.popup/0.30.1920.1050@0.30.1920.1050" timestamp="1596983172716" />
+    <state x="623" y="261" width="672" height="678" key="search.everywhere.popup/0.30.1920.1050@0.30.1920.1050" timestamp="1597346999330" />
   </component>
 </project>

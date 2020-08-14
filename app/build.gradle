@@ -34,6 +34,11 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
 
+    //avatars image lib
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+
     //loader lib
     implementation 'com.github.rahatarmanahmed:circularprogressview:2.5.0'
 
