@@ -11,7 +11,7 @@ import com.example.vk_friends.views.FriendsView
 class FriendsPresenter: MvpPresenter<FriendsView>() {
     fun loadFriends() {
         viewState.startLoading()
-        FriendsProvider(presenter = this).testLoadFriends(hasFriends = true)
+        FriendsProvider(presenter = this).loadFriends()
     }
 
     fun friendsLoaded(friendsList: ArrayList<FriendModel>) {
@@ -22,5 +22,10 @@ class FriendsPresenter: MvpPresenter<FriendsView>() {
         } else {
             viewState.setupFriendsList(friendsList = friendsList)
         }
+    }
+
+
+    fun showError(error: Exception){
+        viewState.showError(R.string.list_error_notification)
     }
 }

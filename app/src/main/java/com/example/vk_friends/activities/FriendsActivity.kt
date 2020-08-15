@@ -89,4 +89,5 @@ class FriendsActivity : MvpAppCompatActivity(), FriendsView {
     override fun endLoading() {
         mCpvWait.visibility = View.GONE
     }
+
 }

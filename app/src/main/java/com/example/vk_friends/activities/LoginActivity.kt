@@ -2,6 +2,7 @@ package com.example.vk_friends.activities
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
@@ -12,10 +13,14 @@ import com.example.vk_friends.R
 import com.example.vk_friends.presenters.LoginPresenter
 import com.example.vk_friends.views.LoginView
 import com.github.rahatarmanahmed.cpv.CircularProgressView
+import com.vk.api.sdk.VK
+import com.vk.api.sdk.auth.VKScope
+import com.vk.api.sdk.utils.VKUtils.getCertificateFingerprint
+
 
 class LoginActivity : MvpAppCompatActivity(), LoginView {
 
-
+    private val TAG: String = LoginActivity::class.java.simpleName
     private lateinit var mTxtHello: TextView
     private lateinit var mBtnEnter: Button
     private lateinit var mCpvWait: CircularProgressView
@@ -32,8 +37,20 @@ class LoginActivity : MvpAppCompatActivity(), LoginView {
         mCpvWait = findViewById(R.id.cpv_login)
 
         mBtnEnter.setOnClickListener {
-            loginPresenter.login(isSuccess = true)
+            VK.login(this, arrayListOf(VKScope.FRIENDS, VKScope.PHOTOS))
         }
+
+        val fingerprints =
+            getCertificateFingerprint(this, this.packageName)
+
+
+
+        Log.e(TAG,"fingerprints:: ${fingerprints}")
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        loginPresenter.loginVk(requestCode = requestCode, resultCode = resultCode, data = data)
     }
 
     override fun startLoading() {

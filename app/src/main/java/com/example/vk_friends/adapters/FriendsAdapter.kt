@@ -65,6 +65,9 @@ class FriendsAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
         @SuppressLint("SetTextI18n")
         fun bind(friendModel: FriendModel) {
+            if(friendModel.getAvatar() == null) {
+                friendModel.setEmptyAvatar()
+            }
             friendModel.getAvatar()?.let { url ->
                 Picasso.get().load(url)
                     .into(mCivAvatar)

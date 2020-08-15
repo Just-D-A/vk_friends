@@ -2,7 +2,11 @@ package com.example.vk_friends.providers
 
 import android.os.Handler
 import com.example.vk_friends.models.FriendModel
+import com.example.vk_friends.models.VKFriendsRequest
+import com.example.vk_friends.models.VKUser
 import com.example.vk_friends.presenters.FriendsPresenter
+import com.vk.api.sdk.VK
+import com.vk.api.sdk.VKApiCallback
 
 class FriendsProvider(var presenter: FriendsPresenter) {
     fun testLoadFriends(hasFriends: Boolean) {
@@ -24,5 +28,26 @@ class FriendsProvider(var presenter: FriendsPresenter) {
             }
             presenter.friendsLoaded(friendsList)
         }, 200)
+    }
+
+    fun loadFriends() {
+        VK.execute(VKFriendsRequest(),object: VKApiCallback<List<VKUser>> {
+
+            override fun success(result: List<VKUser>) {
+                val friendsList: ArrayList<FriendModel> = ArrayList()
+
+                result.forEach{
+                    val friend: FriendModel = FriendModel(name = it.firstName, surname = it.lastName, city = "", avatar = it.photo, isOnline = false)
+                    friendsList.add(friend)
+                }
+                presenter.friendsLoaded(friendsList)
+
+            }
+
+            override fun fail(error: Exception) {
+                presenter.showError(error)
+            }
+        })
+
     }
 }

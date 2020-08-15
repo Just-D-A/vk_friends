@@ -6,4 +6,6 @@
     <string name="friends_no_items">Список друзей пуст</string>
     <string name="login_error_credentials">"Ошибка логинации "</string>
     <string name="friend_no_city">Город не найден</string>
+    <string name="list_error_notification">Ошибка взаимодействия с сервером</string>
+    <integer name="com_vk_sdk_AppId">7568214</integer>
 </resources>
