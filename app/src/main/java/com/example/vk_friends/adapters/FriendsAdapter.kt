@@ -65,7 +65,7 @@ class FriendsAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
         @SuppressLint("SetTextI18n")
         fun bind(friendModel: FriendModel) {
-            if(friendModel.getAvatar() == null) {
+            if((friendModel.getAvatar() == null) || (friendModel.getAvatar().equals(""))) {
                 friendModel.setEmptyAvatar()
             }
             friendModel.getAvatar()?.let { url ->

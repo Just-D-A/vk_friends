@@ -43,7 +43,7 @@ data class VKUser(
                 = VKUser(id = json.optInt("id", 0),
             firstName = json.optString("first_name", ""),
             lastName = json.optString("last_name", ""),
-            photo = json.optString("photo_200", ""),
+            photo = json.optString("photo_100", ""),
             deactivated = json.optBoolean("deactivated", false))
     }
 }

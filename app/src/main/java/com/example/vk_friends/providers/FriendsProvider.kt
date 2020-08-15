@@ -37,7 +37,7 @@ class FriendsProvider(var presenter: FriendsPresenter) {
                 val friendsList: ArrayList<FriendModel> = ArrayList()
 
                 result.forEach{
-                    val friend: FriendModel = FriendModel(name = it.firstName, surname = it.lastName, city = "", avatar = it.photo, isOnline = false)
+                    val friend: FriendModel = FriendModel(name = it.firstName, surname = it.lastName, city = "Yoshkar_Ola", avatar = it.photo, isOnline = true)
                     friendsList.add(friend)
                 }
                 presenter.friendsLoaded(friendsList)
